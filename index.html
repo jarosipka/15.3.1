@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+    <title>Textový analyzátor</title>
+  </head>
+  <body>
+    <textarea id="textarea"></textarea>
+    <button onclick="analyzeText()">Analyzuj</button>
+    <br />
+
+    <p>Výsledky:</p>
+    <ul>
+      <li>Dĺžka celého textu: <span id="textLength"></span></li>
+      <li>
+        Dĺžka textu bez medzier: <span id="textLengthWithoutSpaces"></span>
+      </li>
+      <li>Počet číslic v texte: <span id="numberOfDigits"></span></li>
+      <li>Najdlhšie slovo: <span id="longestWord"></span></li>
+      <li>
+        Počet písmien najdlhšieho slova: <span id="longestWordLength"></span>
+      </li>
+    </ul>
+    <button onclick="encryptText()">Zašifruj text</button>
+    <p>Text po zašifrovaní:</p>
+    <p id="encryptedText"></p>
+  </body>
+</html>
